@@ -13,8 +13,8 @@ client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG
 query_api = client.query_api()
 
 # --- Interfaz de usuario ---
-st.title("📊 Tablero de Digitalización de Planta")
-st.write("Visualización de datos desde InfluxDB en tiempo real.")
+st.title("¡Bienvenido a Umi!")
+st.write("Umi te da una visualización de los datos más importantes para tu cultivo en tiempo real")
 
 sensor = st.selectbox("Selecciona el sensor:", ["DHT22", "MPU6050"])
 start = st.slider(
