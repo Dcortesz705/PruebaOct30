@@ -13,24 +13,6 @@ client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG
 query_api = client.query_api()
 
 # --- Interfaz de usuario ---
-
-# --- Estilos personalizados para sliders ---
-slider_color = """
-<style>
-/* Color de la barra activa del slider */
-.css-1k4jfq7 .stSlider > div > div > div[data-baseweb="slider"] > div > div {
-    background-color: #656D4A !important;
-}
-
-/* Color del handle (círculo del slider) */
-.css-1k4jfq7 .stSlider > div > div > div[data-baseweb="slider"] > div > div > div {
-    background-color: #656D4A !important;
-    border-color: #656D4A !important;
-}
-</style>
-"""
-st.markdown(slider_color, unsafe_allow_html=True)
-
 st.title("¡Bienvenido a Umi 🌱!")
 st.write("Umi te da una visualización de los datos más importantes para tu cultivo en casa en tiempo real")
 
